@@ -68,14 +68,51 @@ class _MyAppState extends State<MyApp> {
                 children: <Widget>[
                   Expanded(
                     child: Center(
-                      child: Text("PLAYER 1"),
+                      child: Text("PLAYER 1",style: TextStyle(color: Colors.red,fontSize: 25.0),),
                     )
+                    
                     
                   ),
                   Expanded(
                     child: Center(
-                      child: Text("PLAYER 2"),
+                      child: Text("PLAYER 2",style: TextStyle(color: Colors.red,fontSize: 25.0),),
                     ),
+                  )
+                ],
+              ),
+              SizedBox(
+                width: double.infinity,
+                height: 20.0,
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Center(
+                      child: Text("NUMBER DISPLAYED",style: TextStyle(fontSize: 17.0,color: Colors.white),),
+                    )
+                  ),
+                  Expanded(
+                    child: Center(
+                      child: Text("NUMBER DISPLAYED",style: TextStyle(fontSize: 17.0,color: Colors.white),),
+                    )
+                  )
+                ],
+              ),
+              SizedBox(
+                width: double.infinity,
+                height: 20.0,
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Center(
+                      child: Text("$num1",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 30.0),),
+                    )
+                  ),
+                  Expanded(
+                    child: Center(
+                      child: Text("$num2",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 30.0),),
+                    )
                   )
                 ],
               )
